@@ -1,0 +1,84 @@
+#brochureForm {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+    max-width: 760px;
+    margin: auto;
+    font-family: inherit;
+  }
+  
+  /* --- 2-column grid (1 column < 600 px) --- */
+  #brochureForm .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 24px;
+  }
+  @media (max-width: 600px) {
+    #brochureForm .form-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* labels + inputs */
+  #brochureForm .form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #202020;
+  }
+  #brochureForm .form-group input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+  
+  /* consent box */
+  #brochureForm .form-check {
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  #brochureForm .form-check-label {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* error messages + invalid status */
+  .error-msg {
+    display: block;
+    font-size: 0.85rem;
+    color: #d12c2c;
+    margin-top: 4px;
+  }
+  input:invalid,
+  .form-check input:invalid {
+    border-color: #d12c2c;
+  }
+  
+  /* CTA button */
+  .btn-submit {
+    margin-top: 24px;
+    background: #004080;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .btn-submit:hover {
+    background: #0066cc;
+  }
+  
+  .hint {
+    font-size: 0.85em;
+    font-weight: 400;
+    color: #666;
+  }
+  
