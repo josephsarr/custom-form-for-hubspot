@@ -1,53 +1,63 @@
-<h2 class>Téléchargement de brochure</h2>
-<form id="brochureForm" novalidate>
-  <div class="form-grid">
-    <div class="form-group">
-      <label for="firstname">Prénom</label>
-      <input type="text" id="firstname" name="firstname" required>
-      <span class="error-msg"></span>
-    </div>
-
-    <div class="form-group">
-      <label for="lastname">Nom</label>
-      <input type="text" id="lastname" name="lastname" required>
-      <span class="error-msg"></span>
-    </div>
-
-    <div class="form-group">
-      <label for="email">Email</label>
-      <!-- email validation -->
-      <input type="email" id="email" name="email" autocomplete="email" required>
-      <span class="error-msg"></span>
-    </div>
-
-    <div class="form-group">
-      <label for="phone">
-        Téléphone
-        <span class="hint">(commencez par + ou 00&nbsp;: ex. +221&nbsp;77 123 45 67)</span>
-      </label>
-
-      <!-- ^(\+|00)   : + OU 00 obligatoires
-       \d{1,4}   : indicatif 1-4 chiffres (ITU-T)
-       [0-9\s]{6,15}$ : 6-15 chiffres ou espaces, norme E.164 -->
-      <input type="tel" id="phone" name="phone" placeholder="+221 77 123 45 67" pattern="^(\+|00)\d{1,4}[0-9\s]{6,15}$" title="Commencez par + ou 00, puis votre numéro (ex. +221 77 123 45 67)" required>
-
-      <span class="error-msg"></span>
-    </div>
-
-  </div>
-
-  <!-- To enable Hubspot to retrieve the course name -->
-  <input type="text" name="formation" id="formation" style="visibility:hidden;">
-
-  <div class="form-check">
-    <input type="checkbox" id="consentement" name="consentement" required>
-    <label for="consentement">J'accepte les
-      <a href="https://dauphine.psl.eu/politique-de-confidentialite-1">
-        conditions générales d’utilisation et de confidentialité
-      </a>
-    </label>
-    <span class="error-msg"></span>
-  </div>
-
-  <button type="submit" class="btn-submit">Télécharger la brochure</button>
-</form>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+ <title>Université Paris Dauphine-PSL Dakar | Université Paris Dauphine-PSL, campus de Dakar</title>
+<link rel="stylesheet" href="./assets/css/styles.css" media="all">
+<script src="./assets/js/main.js"></script>
+    </head>
+    <body>
+        <h2 class>Téléchargement de brochure</h2>
+        <form id="brochureForm" novalidate>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="firstname">Prénom</label>
+              <input type="text" id="firstname" name="firstname" required>
+              <span class="error-msg"></span>
+            </div>
+        
+            <div class="form-group">
+              <label for="lastname">Nom</label>
+              <input type="text" id="lastname" name="lastname" required>
+              <span class="error-msg"></span>
+            </div>
+        
+            <div class="form-group">
+              <label for="email">Email</label>
+              <!-- email validation -->
+              <input type="email" id="email" name="email" autocomplete="email" required>
+              <span class="error-msg"></span>
+            </div>
+        
+            <div class="form-group">
+              <label for="phone">
+                Téléphone
+                <span class="hint">(commencez par + ou 00&nbsp;: ex. +221&nbsp;77 123 45 67)</span>
+              </label>
+        
+              <!-- ^(\+|00)   : + OU 00 obligatoires
+               \d{1,4}   : indicatif 1-4 chiffres (ITU-T)
+               [0-9\s]{6,15}$ : 6-15 chiffres ou espaces, norme E.164 -->
+              <input type="tel" id="phone" name="phone" placeholder="+221 77 123 45 67" pattern="^(\+|00)\d{1,4}[0-9\s]{6,15}$" title="Commencez par + ou 00, puis votre numéro (ex. +221 77 123 45 67)" required>
+        
+              <span class="error-msg"></span>
+            </div>
+        
+          </div>
+        
+          <!-- To enable Hubspot to retrieve the course name -->
+          <input type="text" name="formation" id="formation" style="visibility:hidden;">
+        
+          <div class="form-check">
+            <input type="checkbox" id="consentement" name="consentement" required>
+            <label for="consentement">J'accepte les
+              <a href="https://dauphine.psl.eu/politique-de-confidentialite-1">
+                conditions générales d’utilisation et de confidentialité
+              </a>
+            </label>
+            <span class="error-msg"></span>
+          </div>
+        
+          <button type="submit" class="btn-submit">Télécharger la brochure</button>
+        </form>
+    </body>
+</html>
